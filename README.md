@@ -71,9 +71,8 @@ Collaris
 
 ## Running Tests
 
-```bash
-pytest backend/tests/ -v
-```
+1. execute start_backend.bat
+2. execute start_frontend.bat
 
 ## Environment Variables
 
