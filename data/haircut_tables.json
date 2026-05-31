@@ -1,0 +1,12 @@
+{
+  "haircuts": {
+    "cash": 0.0,
+    "us_treasury": 2.0,
+    "agency_mbs": 3.0,
+    "investment_grade_bond": 5.0,
+    "equity_etf": 7.5,
+    "single_name_equity": 12.0,
+    "high_yield_bond": 17.5,
+    "emerging_market_bond": 20.0
+  }
+}

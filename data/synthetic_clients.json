@@ -1,0 +1,459 @@
+{
+  "clients": [
+    {
+      "id": "C001", "name": "Apex Capital", "strategy": "Long/Short Equity",
+      "aum_millions": 2400.0, "status": "breach",
+      "portfolio": {
+        "nav": 2180.0, "gross_exposure": 4360.0, "net_exposure": 650.0,
+        "margin_used": 342.0, "margin_available": 38.0, "utilization_pct": 90.0
+      },
+      "positions": [
+        {"ticker": "NVDA", "asset_class": "equity", "quantity": 12000, "market_value": 145.2, "direction": "long"},
+        {"ticker": "MSFT", "asset_class": "equity", "quantity": 8500, "market_value": 98.6, "direction": "long"},
+        {"ticker": "TSLA", "asset_class": "equity", "quantity": 5000, "market_value": -62.4, "direction": "short"},
+        {"ticker": "META", "asset_class": "equity", "quantity": 4200, "market_value": 88.5, "direction": "long"},
+        {"ticker": "SPY", "asset_class": "etf", "quantity": 3000, "market_value": 195.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US10Y", "face_value": 120.0, "market_value": 117.6, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "single_name_equity", "ticker": "AAPL", "face_value": 45.0, "market_value": 44.1, "haircut_pct": 12.0, "is_pledged": false, "eligible": true},
+        {"asset_type": "cash", "ticker": "USD", "face_value": 18.0, "market_value": 18.0, "haircut_pct": 0.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 91, "utilization_pct": 90.0, "shortfall_millions": 18.4,
+        "lead_time_hours": 2.5, "trend": "up", "var_1d": 38.2, "stress_worst": -312.0,
+        "call_history_30d": 2
+      }
+    },
+    {
+      "id": "C002", "name": "Meridian Macro Fund", "strategy": "Global Macro",
+      "aum_millions": 1850.0, "status": "warning",
+      "portfolio": {
+        "nav": 1720.0, "gross_exposure": 5160.0, "net_exposure": 340.0,
+        "margin_used": 248.0, "margin_available": 104.0, "utilization_pct": 70.5
+      },
+      "positions": [
+        {"ticker": "TLT", "asset_class": "etf", "quantity": 15000, "market_value": 220.5, "direction": "long"},
+        {"ticker": "GLD", "asset_class": "commodity", "quantity": 8000, "market_value": 184.0, "direction": "long"},
+        {"ticker": "EUR/USD", "asset_class": "fx", "quantity": 5000000, "market_value": 145.0, "direction": "long"},
+        {"ticker": "DXY", "asset_class": "fx", "quantity": 3000000, "market_value": -92.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US5Y", "face_value": 200.0, "market_value": 196.0, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "agency_mbs", "ticker": "MBS_AAA", "face_value": 85.0, "market_value": 82.5, "haircut_pct": 3.0, "is_pledged": false, "eligible": true},
+        {"asset_type": "investment_grade_bond", "ticker": "LQD", "face_value": 60.0, "market_value": 57.0, "haircut_pct": 5.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 72, "utilization_pct": 70.5, "shortfall_millions": 0.0,
+        "lead_time_hours": 18.0, "trend": "up", "var_1d": 28.4, "stress_worst": -245.0,
+        "call_history_30d": 1
+      }
+    },
+    {
+      "id": "C003", "name": "Silverpoint Equity Partners", "strategy": "Long/Short Equity",
+      "aum_millions": 980.0, "status": "normal",
+      "portfolio": {
+        "nav": 920.0, "gross_exposure": 1840.0, "net_exposure": 280.0,
+        "margin_used": 98.0, "margin_available": 112.0, "utilization_pct": 46.7
+      },
+      "positions": [
+        {"ticker": "GOOGL", "asset_class": "equity", "quantity": 6000, "market_value": 112.4, "direction": "long"},
+        {"ticker": "AMZN", "asset_class": "equity", "quantity": 4500, "market_value": 89.1, "direction": "long"},
+        {"ticker": "NFLX", "asset_class": "equity", "quantity": 2000, "market_value": -45.6, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US2Y", "face_value": 150.0, "market_value": 148.5, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "equity_etf", "ticker": "QQQ", "face_value": 55.0, "market_value": 54.2, "haircut_pct": 7.5, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 38, "utilization_pct": 46.7, "shortfall_millions": 0.0,
+        "lead_time_hours": 72.0, "trend": "stable", "var_1d": 14.2, "stress_worst": -128.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C004", "name": "Northgate Credit Fund", "strategy": "Credit Arbitrage",
+      "aum_millions": 3100.0, "status": "breach",
+      "portfolio": {
+        "nav": 2880.0, "gross_exposure": 8640.0, "net_exposure": 120.0,
+        "margin_used": 442.0, "margin_available": 28.0, "utilization_pct": 94.0
+      },
+      "positions": [
+        {"ticker": "HYG", "asset_class": "etf", "quantity": 20000, "market_value": 312.0, "direction": "long"},
+        {"ticker": "CDX_IG", "asset_class": "bond", "quantity": 50000000, "market_value": -148.0, "direction": "short"},
+        {"ticker": "JNK", "asset_class": "etf", "quantity": 15000, "market_value": 225.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US30Y", "face_value": 180.0, "market_value": 174.6, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "high_yield_bond", "ticker": "HY_CORP", "face_value": 80.0, "market_value": 72.0, "haircut_pct": 17.5, "is_pledged": false, "eligible": true},
+        {"asset_type": "cash", "ticker": "USD", "face_value": 25.0, "market_value": 25.0, "haircut_pct": 0.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 94, "utilization_pct": 94.0, "shortfall_millions": 43.2,
+        "lead_time_hours": 0.8, "trend": "up", "var_1d": 62.4, "stress_worst": -524.0,
+        "call_history_30d": 3
+      }
+    },
+    {
+      "id": "C005", "name": "Kairos Quant Strategy", "strategy": "Statistical Arbitrage",
+      "aum_millions": 620.0, "status": "normal",
+      "portfolio": {
+        "nav": 598.0, "gross_exposure": 2990.0, "net_exposure": 18.0,
+        "margin_used": 64.0, "margin_available": 96.0, "utilization_pct": 40.0
+      },
+      "positions": [
+        {"ticker": "SPY", "asset_class": "etf", "quantity": 5000, "market_value": 118.0, "direction": "long"},
+        {"ticker": "IWM", "asset_class": "etf", "quantity": 5000, "market_value": -112.0, "direction": "short"},
+        {"ticker": "QQQ", "asset_class": "etf", "quantity": 3000, "market_value": 84.0, "direction": "long"},
+        {"ticker": "DIA", "asset_class": "etf", "quantity": 3000, "market_value": -80.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US3M", "face_value": 100.0, "market_value": 99.8, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "investment_grade_bond", "ticker": "AGG", "face_value": 40.0, "market_value": 38.8, "haircut_pct": 5.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 28, "utilization_pct": 40.0, "shortfall_millions": 0.0,
+        "lead_time_hours": 96.0, "trend": "down", "var_1d": 8.4, "stress_worst": -72.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C006", "name": "Helix Volatility Fund", "strategy": "Volatility Arbitrage",
+      "aum_millions": 440.0, "status": "warning",
+      "portfolio": {
+        "nav": 412.0, "gross_exposure": 1648.0, "net_exposure": 42.0,
+        "margin_used": 80.0, "margin_available": 28.0, "utilization_pct": 74.1
+      },
+      "positions": [
+        {"ticker": "VIX", "asset_class": "equity", "quantity": 10000, "market_value": 68.0, "direction": "long"},
+        {"ticker": "UVXY", "asset_class": "etf", "quantity": 8000, "market_value": -52.0, "direction": "short"},
+        {"ticker": "SPX_OPTS", "asset_class": "equity", "quantity": 200, "market_value": 48.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "cash", "ticker": "USD", "face_value": 30.0, "market_value": 30.0, "haircut_pct": 0.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "us_treasury", "ticker": "US1Y", "face_value": 50.0, "market_value": 49.5, "haircut_pct": 2.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 76, "utilization_pct": 74.1, "shortfall_millions": 0.0,
+        "lead_time_hours": 12.0, "trend": "up", "var_1d": 22.8, "stress_worst": -198.0,
+        "call_history_30d": 1
+      }
+    },
+    {
+      "id": "C007", "name": "Titan Multi-Strategy", "strategy": "Multi-Strategy",
+      "aum_millions": 5200.0, "status": "normal",
+      "portfolio": {
+        "nav": 4840.0, "gross_exposure": 9680.0, "net_exposure": 480.0,
+        "margin_used": 520.0, "margin_available": 680.0, "utilization_pct": 43.3
+      },
+      "positions": [
+        {"ticker": "AAPL", "asset_class": "equity", "quantity": 25000, "market_value": 478.0, "direction": "long"},
+        {"ticker": "AMZN", "asset_class": "equity", "quantity": 12000, "market_value": 248.0, "direction": "long"},
+        {"ticker": "BRK.B", "asset_class": "equity", "quantity": 8000, "market_value": -185.0, "direction": "short"},
+        {"ticker": "TLT", "asset_class": "etf", "quantity": 20000, "market_value": 296.0, "direction": "long"},
+        {"ticker": "GLD", "asset_class": "commodity", "quantity": 10000, "market_value": 230.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US10Y", "face_value": 500.0, "market_value": 490.0, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "equity_etf", "ticker": "SPY", "face_value": 200.0, "market_value": 198.0, "haircut_pct": 7.5, "is_pledged": false, "eligible": true},
+        {"asset_type": "investment_grade_bond", "ticker": "LQD", "face_value": 150.0, "market_value": 142.5, "haircut_pct": 5.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 35, "utilization_pct": 43.3, "shortfall_millions": 0.0,
+        "lead_time_hours": 120.0, "trend": "stable", "var_1d": 62.8, "stress_worst": -580.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C008", "name": "Redwood EM Fund", "strategy": "Emerging Markets",
+      "aum_millions": 1420.0, "status": "warning",
+      "portfolio": {
+        "nav": 1320.0, "gross_exposure": 2640.0, "net_exposure": 880.0,
+        "margin_used": 192.0, "margin_available": 68.0, "utilization_pct": 73.8
+      },
+      "positions": [
+        {"ticker": "EEM", "asset_class": "etf", "quantity": 18000, "market_value": 284.0, "direction": "long"},
+        {"ticker": "VWO", "asset_class": "etf", "quantity": 12000, "market_value": 196.0, "direction": "long"},
+        {"ticker": "USD/BRL", "asset_class": "fx", "quantity": 2000000, "market_value": 62.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "emerging_market_bond", "ticker": "EMB", "face_value": 90.0, "market_value": 82.8, "haircut_pct": 20.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "us_treasury", "ticker": "US5Y", "face_value": 80.0, "market_value": 78.4, "haircut_pct": 2.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 78, "utilization_pct": 73.8, "shortfall_millions": 0.0,
+        "lead_time_hours": 10.0, "trend": "up", "var_1d": 31.6, "stress_worst": -285.0,
+        "call_history_30d": 2
+      }
+    },
+    {
+      "id": "C009", "name": "Polaris Fixed Income", "strategy": "Fixed Income Relative Value",
+      "aum_millions": 8400.0, "status": "normal",
+      "portfolio": {
+        "nav": 7920.0, "gross_exposure": 39600.0, "net_exposure": 240.0,
+        "margin_used": 680.0, "margin_available": 1120.0, "utilization_pct": 37.8
+      },
+      "positions": [
+        {"ticker": "US10Y_FUT", "asset_class": "bond", "quantity": 500, "market_value": 620.0, "direction": "long"},
+        {"ticker": "US2Y_FUT", "asset_class": "bond", "quantity": 800, "market_value": -580.0, "direction": "short"},
+        {"ticker": "TIPS", "asset_class": "bond", "quantity": 10000, "market_value": 248.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US10Y", "face_value": 1200.0, "market_value": 1176.0, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "agency_mbs", "ticker": "FNMA", "face_value": 400.0, "market_value": 388.0, "haircut_pct": 3.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 25, "utilization_pct": 37.8, "shortfall_millions": 0.0,
+        "lead_time_hours": 168.0, "trend": "down", "var_1d": 42.4, "stress_worst": -398.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C010", "name": "Cascade Event Driven", "strategy": "Event Driven",
+      "aum_millions": 760.0, "status": "breach",
+      "portfolio": {
+        "nav": 704.0, "gross_exposure": 1408.0, "net_exposure": 420.0,
+        "margin_used": 132.0, "margin_available": 8.0, "utilization_pct": 94.3
+      },
+      "positions": [
+        {"ticker": "VMW", "asset_class": "equity", "quantity": 5000, "market_value": 112.0, "direction": "long"},
+        {"ticker": "ATVI", "asset_class": "equity", "quantity": 4000, "market_value": 84.0, "direction": "long"},
+        {"ticker": "JPM", "asset_class": "equity", "quantity": 2000, "market_value": -68.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "single_name_equity", "ticker": "MSFT", "face_value": 40.0, "market_value": 38.8, "haircut_pct": 12.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "cash", "ticker": "USD", "face_value": 12.0, "market_value": 12.0, "haircut_pct": 0.0, "is_pledged": false, "eligible": true},
+        {"asset_type": "us_treasury", "ticker": "US1Y", "face_value": 20.0, "market_value": 19.8, "haircut_pct": 2.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 88, "utilization_pct": 94.3, "shortfall_millions": 12.8,
+        "lead_time_hours": 1.5, "trend": "up", "var_1d": 24.6, "stress_worst": -168.0,
+        "call_history_30d": 2
+      }
+    },
+    {
+      "id": "C011", "name": "Vanguard Alpha Select", "strategy": "Long/Short Equity",
+      "aum_millions": 1680.0, "status": "normal",
+      "portfolio": {
+        "nav": 1560.0, "gross_exposure": 3120.0, "net_exposure": 520.0,
+        "margin_used": 148.0, "margin_available": 212.0, "utilization_pct": 41.1
+      },
+      "positions": [
+        {"ticker": "NVDA", "asset_class": "equity", "quantity": 8000, "market_value": 198.0, "direction": "long"},
+        {"ticker": "AMD", "asset_class": "equity", "quantity": 6000, "market_value": 124.0, "direction": "long"},
+        {"ticker": "INTC", "asset_class": "equity", "quantity": 5000, "market_value": -48.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US7Y", "face_value": 250.0, "market_value": 245.0, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "equity_etf", "ticker": "XLK", "face_value": 80.0, "market_value": 79.2, "haircut_pct": 7.5, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 32, "utilization_pct": 41.1, "shortfall_millions": 0.0,
+        "lead_time_hours": 96.0, "trend": "stable", "var_1d": 18.6, "stress_worst": -145.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C012", "name": "Ironwood Distressed", "strategy": "Distressed Debt",
+      "aum_millions": 2200.0, "status": "warning",
+      "portfolio": {
+        "nav": 2040.0, "gross_exposure": 4080.0, "net_exposure": 1840.0,
+        "margin_used": 282.0, "margin_available": 78.0, "utilization_pct": 78.3
+      },
+      "positions": [
+        {"ticker": "SRRY", "asset_class": "bond", "quantity": 20000, "market_value": 248.0, "direction": "long"},
+        {"ticker": "BKLN", "asset_class": "etf", "quantity": 15000, "market_value": 182.0, "direction": "long"},
+        {"ticker": "HYG", "asset_class": "etf", "quantity": 5000, "market_value": -74.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "high_yield_bond", "ticker": "HY_CORP2", "face_value": 100.0, "market_value": 89.5, "haircut_pct": 17.5, "is_pledged": true, "eligible": true},
+        {"asset_type": "investment_grade_bond", "ticker": "VCIT", "face_value": 120.0, "market_value": 114.0, "haircut_pct": 5.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 74, "utilization_pct": 78.3, "shortfall_millions": 0.0,
+        "lead_time_hours": 14.0, "trend": "up", "var_1d": 38.4, "stress_worst": -310.0,
+        "call_history_30d": 1
+      }
+    },
+    {
+      "id": "C013", "name": "Solaris Commodities", "strategy": "Commodity Macro",
+      "aum_millions": 890.0, "status": "normal",
+      "portfolio": {
+        "nav": 830.0, "gross_exposure": 2490.0, "net_exposure": 248.0,
+        "margin_used": 88.0, "margin_available": 124.0, "utilization_pct": 41.5
+      },
+      "positions": [
+        {"ticker": "GLD", "asset_class": "commodity", "quantity": 6000, "market_value": 138.0, "direction": "long"},
+        {"ticker": "SLV", "asset_class": "commodity", "quantity": 8000, "market_value": 96.0, "direction": "long"},
+        {"ticker": "USO", "asset_class": "etf", "quantity": 5000, "market_value": -72.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US5Y", "face_value": 130.0, "market_value": 127.4, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "cash", "ticker": "USD", "face_value": 22.0, "market_value": 22.0, "haircut_pct": 0.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 30, "utilization_pct": 41.5, "shortfall_millions": 0.0,
+        "lead_time_hours": 88.0, "trend": "down", "var_1d": 16.2, "stress_worst": -115.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C014", "name": "Delphi Tech Concentrated", "strategy": "Concentrated Long",
+      "aum_millions": 1100.0, "status": "warning",
+      "portfolio": {
+        "nav": 1020.0, "gross_exposure": 1530.0, "net_exposure": 1020.0,
+        "margin_used": 148.0, "margin_available": 52.0, "utilization_pct": 74.0
+      },
+      "positions": [
+        {"ticker": "NVDA", "asset_class": "equity", "quantity": 10000, "market_value": 242.0, "direction": "long"},
+        {"ticker": "TSMC", "asset_class": "equity", "quantity": 6000, "market_value": 168.0, "direction": "long"},
+        {"ticker": "AVGO", "asset_class": "equity", "quantity": 2000, "market_value": 98.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "single_name_equity", "ticker": "NVDA", "face_value": 80.0, "market_value": 77.2, "haircut_pct": 12.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "us_treasury", "ticker": "US2Y", "face_value": 60.0, "market_value": 59.4, "haircut_pct": 2.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 69, "utilization_pct": 74.0, "shortfall_millions": 0.0,
+        "lead_time_hours": 20.0, "trend": "up", "var_1d": 28.8, "stress_worst": -224.0,
+        "call_history_30d": 1
+      }
+    },
+    {
+      "id": "C015", "name": "Amber Systematic Futures", "strategy": "Managed Futures",
+      "aum_millions": 3400.0, "status": "normal",
+      "portfolio": {
+        "nav": 3160.0, "gross_exposure": 15800.0, "net_exposure": 320.0,
+        "margin_used": 280.0, "margin_available": 520.0, "utilization_pct": 35.0
+      },
+      "positions": [
+        {"ticker": "ES_FUT", "asset_class": "equity", "quantity": 200, "market_value": 480.0, "direction": "long"},
+        {"ticker": "ZB_FUT", "asset_class": "bond", "quantity": 300, "market_value": -420.0, "direction": "short"},
+        {"ticker": "CL_FUT", "asset_class": "commodity", "quantity": 150, "market_value": 186.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US10Y", "face_value": 600.0, "market_value": 588.0, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "agency_mbs", "ticker": "GNMA", "face_value": 200.0, "market_value": 194.0, "haircut_pct": 3.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 22, "utilization_pct": 35.0, "shortfall_millions": 0.0,
+        "lead_time_hours": 200.0, "trend": "down", "var_1d": 48.6, "stress_worst": -420.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C016", "name": "Prism Capital Healthcare", "strategy": "Healthcare Long/Short",
+      "aum_millions": 580.0, "status": "normal",
+      "portfolio": {
+        "nav": 542.0, "gross_exposure": 1084.0, "net_exposure": 380.0,
+        "margin_used": 52.0, "margin_available": 88.0, "utilization_pct": 37.1
+      },
+      "positions": [
+        {"ticker": "UNH", "asset_class": "equity", "quantity": 2000, "market_value": 128.0, "direction": "long"},
+        {"ticker": "ABBV", "asset_class": "equity", "quantity": 3000, "market_value": 98.0, "direction": "long"},
+        {"ticker": "CVS", "asset_class": "equity", "quantity": 2500, "market_value": -48.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US3Y", "face_value": 90.0, "market_value": 88.2, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "equity_etf", "ticker": "XLV", "face_value": 35.0, "market_value": 34.6, "haircut_pct": 7.5, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 24, "utilization_pct": 37.1, "shortfall_millions": 0.0,
+        "lead_time_hours": 120.0, "trend": "stable", "var_1d": 10.4, "stress_worst": -82.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C017", "name": "Fulcrum Risk Premia", "strategy": "Risk Premia",
+      "aum_millions": 1940.0, "status": "warning",
+      "portfolio": {
+        "nav": 1808.0, "gross_exposure": 7232.0, "net_exposure": 90.0,
+        "margin_used": 248.0, "margin_available": 72.0, "utilization_pct": 77.5
+      },
+      "positions": [
+        {"ticker": "SPY", "asset_class": "etf", "quantity": 8000, "market_value": 284.0, "direction": "long"},
+        {"ticker": "IEF", "asset_class": "etf", "quantity": 10000, "market_value": 248.0, "direction": "long"},
+        {"ticker": "GLD", "asset_class": "commodity", "quantity": 5000, "market_value": 116.0, "direction": "long"},
+        {"ticker": "VXX", "asset_class": "etf", "quantity": 6000, "market_value": -112.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "us_treasury", "ticker": "US5Y", "face_value": 200.0, "market_value": 196.0, "haircut_pct": 2.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "investment_grade_bond", "ticker": "BND", "face_value": 80.0, "market_value": 76.0, "haircut_pct": 5.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 71, "utilization_pct": 77.5, "shortfall_millions": 0.0,
+        "lead_time_hours": 16.0, "trend": "up", "var_1d": 26.4, "stress_worst": -218.0,
+        "call_history_30d": 1
+      }
+    },
+    {
+      "id": "C018", "name": "Zenith Convertible Arb", "strategy": "Convertible Arbitrage",
+      "aum_millions": 720.0, "status": "normal",
+      "portfolio": {
+        "nav": 672.0, "gross_exposure": 2016.0, "net_exposure": 68.0,
+        "margin_used": 72.0, "margin_available": 108.0, "utilization_pct": 40.0
+      },
+      "positions": [
+        {"ticker": "TSLA_CB", "asset_class": "bond", "quantity": 5000, "market_value": 148.0, "direction": "long"},
+        {"ticker": "TSLA", "asset_class": "equity", "quantity": 4000, "market_value": -128.0, "direction": "short"},
+        {"ticker": "NVDA_CB", "asset_class": "bond", "quantity": 3000, "market_value": 98.0, "direction": "long"},
+        {"ticker": "NVDA", "asset_class": "equity", "quantity": 2000, "market_value": -86.0, "direction": "short"}
+      ],
+      "collateral": [
+        {"asset_type": "investment_grade_bond", "ticker": "IGSB", "face_value": 110.0, "market_value": 104.5, "haircut_pct": 5.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "cash", "ticker": "USD", "face_value": 15.0, "market_value": 15.0, "haircut_pct": 0.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 29, "utilization_pct": 40.0, "shortfall_millions": 0.0,
+        "lead_time_hours": 100.0, "trend": "stable", "var_1d": 12.8, "stress_worst": -98.0,
+        "call_history_30d": 0
+      }
+    },
+    {
+      "id": "C019", "name": "Crestline Activist", "strategy": "Activist Long",
+      "aum_millions": 4100.0, "status": "warning",
+      "portfolio": {
+        "nav": 3820.0, "gross_exposure": 5730.0, "net_exposure": 3820.0,
+        "margin_used": 480.0, "margin_available": 140.0, "utilization_pct": 77.4
+      },
+      "positions": [
+        {"ticker": "DIS", "asset_class": "equity", "quantity": 15000, "market_value": 312.0, "direction": "long"},
+        {"ticker": "GE", "asset_class": "equity", "quantity": 20000, "market_value": 248.0, "direction": "long"},
+        {"ticker": "F", "asset_class": "equity", "quantity": 30000, "market_value": 198.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "single_name_equity", "ticker": "DIS", "face_value": 150.0, "market_value": 144.0, "haircut_pct": 12.0, "is_pledged": true, "eligible": true},
+        {"asset_type": "us_treasury", "ticker": "US10Y", "face_value": 250.0, "market_value": 245.0, "haircut_pct": 2.0, "is_pledged": false, "eligible": true},
+        {"asset_type": "equity_etf", "ticker": "XLY", "face_value": 90.0, "market_value": 89.1, "haircut_pct": 7.5, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 68, "utilization_pct": 77.4, "shortfall_millions": 0.0,
+        "lead_time_hours": 22.0, "trend": "up", "var_1d": 54.2, "stress_worst": -462.0,
+        "call_history_30d": 1
+      }
+    },
+    {
+      "id": "C020", "name": "Orion Special Situations", "strategy": "Special Situations",
+      "aum_millions": 640.0, "status": "breach",
+      "portfolio": {
+        "nav": 596.0, "gross_exposure": 894.0, "net_exposure": 596.0,
+        "margin_used": 112.0, "margin_available": 4.8, "utilization_pct": 95.9
+      },
+      "positions": [
+        {"ticker": "SVB_BOND", "asset_class": "bond", "quantity": 10000, "market_value": 88.0, "direction": "long"},
+        {"ticker": "BBBY", "asset_class": "equity", "quantity": 5000, "market_value": 48.0, "direction": "long"},
+        {"ticker": "SPCE", "asset_class": "equity", "quantity": 8000, "market_value": 38.0, "direction": "long"}
+      ],
+      "collateral": [
+        {"asset_type": "high_yield_bond", "ticker": "HY_SPEC", "face_value": 50.0, "market_value": 42.5, "haircut_pct": 17.5, "is_pledged": true, "eligible": true},
+        {"asset_type": "cash", "ticker": "USD", "face_value": 8.0, "market_value": 8.0, "haircut_pct": 0.0, "is_pledged": false, "eligible": true},
+        {"asset_type": "us_treasury", "ticker": "US6M", "face_value": 15.0, "market_value": 14.9, "haircut_pct": 2.0, "is_pledged": false, "eligible": true}
+      ],
+      "risk": {
+        "mrs_score": 96, "utilization_pct": 95.9, "shortfall_millions": 56.4,
+        "lead_time_hours": 0.5, "trend": "up", "var_1d": 28.4, "stress_worst": -198.0,
+        "call_history_30d": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens (CLAUDE.md §12) ─────────────────────────────────────── */
+:root {
+  --bg-base:        #0a0c10;
+  --bg-surface:     rgba(255, 255, 255, 0.03);
+  --bg-elevated:    rgba(255, 255, 255, 0.06);
+  --border:         rgba(255, 255, 255, 0.07);
+
+  --status-breach:  #ff4444;
+  --status-warning: #f5a623;
+  --status-normal:  #00c97d;
+  --status-info:    #0097ff;
+
+  --text-primary:   #e8eaf0;
+  --text-secondary: #aab0bb;
+  --text-muted:     #555;
+
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 2px; }
+
+/* Global utilities */
+.text-primary   { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted     { color: var(--text-muted); }
+
+.status-breach  { color: var(--status-breach); }
+.status-warning { color: var(--status-warning); }
+.status-normal  { color: var(--status-normal); }
+.status-info    { color: var(--status-info); }
+
+.border-default { border-color: var(--border); }
+.bg-surface     { background: var(--bg-surface); }
+.bg-elevated    { background: var(--bg-elevated); }
+
+/* Glow animation for live indicator */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 4px var(--status-normal); }
+  50%       { opacity: 0.5; box-shadow: 0 0 2px var(--status-normal); }
+}
+.live-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--status-normal);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Fade-in for panels */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fade-in 0.2s ease-out; }

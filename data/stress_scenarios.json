@@ -1,0 +1,36 @@
+{
+  "scenarios": [
+    {
+      "id": "covid_2020",
+      "label": "2020 COVID Crash",
+      "equity_shock": -0.34,
+      "bond_shock": 0.05,
+      "fx_shock": -0.08,
+      "vol_multiplier": 3.5
+    },
+    {
+      "id": "rate_spike_2022",
+      "label": "2022 Rate Spike",
+      "equity_shock": -0.21,
+      "bond_shock": -0.18,
+      "fx_shock": -0.04,
+      "vol_multiplier": 2.0
+    },
+    {
+      "id": "svb_2023",
+      "label": "SVB Collapse 2023",
+      "equity_shock": -0.14,
+      "bond_shock": -0.06,
+      "fx_shock": -0.02,
+      "vol_multiplier": 1.6
+    },
+    {
+      "id": "custom_equity_10",
+      "label": "Custom: -10% Equity",
+      "equity_shock": -0.10,
+      "bond_shock": 0.0,
+      "fx_shock": 0.0,
+      "vol_multiplier": 1.2
+    }
+  ]
+}

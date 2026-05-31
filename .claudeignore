@@ -1,0 +1,10 @@
+data/raw/
+*.parquet
+*.csv
+node_modules/
+__pycache__/
+.env
+*.pyc
+dist/
+build/
+.git/
